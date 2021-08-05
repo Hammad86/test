@@ -19,4 +19,4 @@ jobs:
     - name: installing surge
       run: npm install --global surge
     - name: deploy using surge
-      run: surge ./ glistening-crayon.surge.sh --token {{secrets.SURGE}}
+      run: surge ./ glistening-crayon.surge.sh --token ${{secrets.SURGE}}
